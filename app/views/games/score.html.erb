@@ -1,0 +1,15 @@
+<div class="centered-container">
+  <h1>Your Result</h1>
+  <p class="result-message"><%= @message %></p>
+  <p class="result-message">Your total score is: <%= @total_score %></p>
+
+  <h2>Performance in This Session</h2>
+  <ul>
+    <% session[:scores].each_with_index do |score, index| %>
+      <li>Round <%= index + 1 %>: <%= score %> points</li>
+    <% end %>
+  </ul>
+
+  <%= link_to 'Play again', new_game_path, class: 'btn btn-primary play-again-button' %>
+  <%= link_to 'Reset Score', reset_score_path, method: :delete, class: 'btn btn-secondary', style: 'margin-top: 10px;' %>
+</div>

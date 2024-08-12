@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+ .centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.letter-box {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.game-title {
+  margin-bottom: 10px;
+}
+
+.game-subtitle {
+  margin-bottom: 20px;
+}
+
+.letters-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  margin-top: 15px;
+}
+
+.result-message {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.play-again-button {
+  margin-top: 20px;
+}
